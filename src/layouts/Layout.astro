@@ -9,6 +9,15 @@ const { title } = Astro.props
 <html lang="vi" class="dark">
 	<GlobalHead {title} />
 	<body class="bg-white dark:bg-gray-900">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-5W9LLMD7"
+				height="0"
+				width="0"
+				style="display:none;visibility:hidden"></iframe></noscript
+		>
+		<!-- End Google Tag Manager (noscript) -->
 		<AppHeader />
 		<slot />
 		<AppFooter />
