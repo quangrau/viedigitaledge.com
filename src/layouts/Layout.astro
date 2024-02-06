@@ -1,45 +1,26 @@
 ---
 import AppFooter from '../components/AppFooter.astro'
 import AppHeader from '../components/AppHeader.astro'
-import GlobalStyles from '../components/GlobalStyles.astro'
+import GlobalHead from '../components/GlobalHead.astro'
 const { title } = Astro.props
 ---
 
 <!doctype html>
 <html lang="vi" class="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<meta
-			name="description"
-			content="VieDigitalEdge mang đến dịch vụ tăng cường đánh giá Google cho doanh nghiệp địa phương, đẩy nhanh quá trình phát triển sản phẩm với giá cả linh hoạt thông qua Phát triển Low-Code, xây dựng ứng dụng từ các thành phần có sẵn và thiết kế cũng như phát triển website chuyên nghiệp."
-		/>
-		<meta
-			name="keywords"
-			content="tăng đánh giá Google, phát triển doanh nghiệp địa phương, phát triển sản phẩm linh hoạt, Phát triển Low-Code, xây dựng ứng dụng nhanh, thiết kế website, phát triển website, VieDigitalEdge, công nghệ thông minh, giải pháp công nghệ, tối ưu hóa tìm kiếm"
-		/>
-
-		<link
-			href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<GlobalStyles />
-	</head>
+	<GlobalHead {title} />
 	<body class="bg-white dark:bg-gray-900">
 		<AppHeader />
 		<slot />
 		<AppFooter />
-	</body><style>
-		html {
-			font-family: Urbanist, sans-serif;
-			scroll-behavior: smooth;
-		}
+		<style>
+			html {
+				font-family: Urbanist, sans-serif;
+				scroll-behavior: smooth;
+			}
 
-		body {
-			margin: 0;
-		}
-	</style>
+			body {
+				margin: 0;
+			}
+		</style>
+	</body>
 </html>

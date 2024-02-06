@@ -1,0 +1,28 @@
+---
+import GlobalStyles from './GlobalStyles.astro'
+const { title } = Astro.props
+---
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+	<link rel="manifest" href="/site.webmanifest" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
+	<meta
+		name="description"
+		content="VieDigitalEdge mang đến dịch vụ tăng cường đánh giá Google cho doanh nghiệp địa phương, đẩy nhanh quá trình phát triển sản phẩm với giá cả linh hoạt thông qua Phát triển Low-Code, xây dựng ứng dụng từ các thành phần có sẵn và thiết kế cũng như phát triển website chuyên nghiệp."
+	/>
+	<meta
+		name="keywords"
+		content="tăng đánh giá Google, phát triển doanh nghiệp địa phương, phát triển sản phẩm linh hoạt, Phát triển Low-Code, xây dựng ứng dụng nhanh, thiết kế website, phát triển website, VieDigitalEdge, công nghệ thông minh, giải pháp công nghệ, tối ưu hóa tìm kiếm"
+	/>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap"
+		rel="stylesheet"
+	/>
+	<GlobalStyles />
+</head>
