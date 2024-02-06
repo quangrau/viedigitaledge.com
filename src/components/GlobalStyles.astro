@@ -1,0 +1,84 @@
+<style is:global>
+	#btn-form {
+		position: relative;
+		display: flex;
+		height: 2.75rem;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+		padding-left: 1.25rem;
+		padding-right: 1.25rem;
+	}
+
+	#btn-form:before {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		border-radius: 9999px;
+		transition-property:
+			color,
+			background-color,
+			border-color,
+			fill,
+			stroke,
+			opacity,
+			box-shadow,
+			transform,
+			filter,
+			-webkit-text-decoration-color,
+			-webkit-backdrop-filter;
+		transition-property: color, background-color, border-color, text-decoration-color, fill, stroke,
+			opacity, box-shadow, transform, filter, backdrop-filter;
+		transition-property:
+			color,
+			background-color,
+			border-color,
+			text-decoration-color,
+			fill,
+			stroke,
+			opacity,
+			box-shadow,
+			transform,
+			filter,
+			backdrop-filter,
+			-webkit-text-decoration-color,
+			-webkit-backdrop-filter;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		content: var(--tw-content);
+		transition-duration: 0.3s;
+	}
+
+	#btn-form:hover:before {
+		content: var(--tw-content);
+		--tw-scale-x: 1.05;
+		--tw-scale-y: 1.05;
+		transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
+			skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+			scaleY(var(--tw-scale-y));
+	}
+
+	#btn-form:active {
+		transition-duration: 75ms;
+	}
+
+	#btn-form:active:before {
+		content: var(--tw-content);
+		--tw-scale-x: 0.95;
+		--tw-scale-y: 0.95;
+		transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate))
+			skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x))
+			scaleY(var(--tw-scale-y));
+	}
+
+	#btn-form span {
+		position: relative;
+		width: -webkit-max-content;
+		width: -moz-max-content;
+		width: max-content;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		font-weight: 600;
+	}
+</style>
